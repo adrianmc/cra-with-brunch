@@ -4,6 +4,9 @@ module.exports = {
       joinTo: {
         'vendor.js': /^(?!app)/,
         'app.js': /^app/
+      },
+      order: {
+        after: [/\.css$/]
       }
     },
     stylesheets: {joinTo: 'app.css'}
